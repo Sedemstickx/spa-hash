@@ -1,0 +1,46 @@
+<script>
+document.title = "Hompage";//set page title
+</script>
+
+<nav><a id="active" href="#home.html">Home</a> | <a href="#about.html">About us</a> | <a href="#contact.html">Contact us</a></nav>
+
+<h2>Welcome to SPA hash(#) with JQuery</h2>
+
+<p>Hi guys, this is a simple and light(less than 50 lines of code as of now) Single Page Application (SPA) written in jquery that I decided to create for myself and developers that 
+just learnt javascript and jquery and want to just build a simple SPA site e.g a portfolio website that will contain pages like <b>about</b> and <b>contact</b> or any site that wants to have that native app feel without having to go through the hustle of learning heavy frameworks just to be able to do same although for the future that's the way to go.</p>
+
+<strong>Why jquery and not just vanilla js?</strong>
+<p>Jquery because it's cross browser and you write less code whiles doing more.</p>
+
+<strong>Why jquery with hash?</strong>
+<p>The hash symbol for SPA can be compatible with older browsers and it's easier to develop SPA with.</p>
+
+<strong>What popular frameworks are made for SPA?</strong>
+<br>
+ <br>
+<button value="Vue" title="Double click to hide framework">Show Framework</button>
+<br>
+ <br>
+<button value="React" title="Double click to hide framework">Show Framework</button>
+<br>
+ <br>
+<button value="Angular" title="Double click to hide framework">Show Framework</button>
+<br>
+ <br>
+
+<p id="show_frameworks"></p>
+
+<script>
+$(document).on("click", "button", function(){
+  $("#show_frameworks").slideDown();
+ $("#show_frameworks").html($(this).val());
+
+$("button").dblclick(function(){
+ $("#show_frameworks").hide();
+ }); 
+});
+</script>
+
+<p>Check out a tech support website developed by me: <a href="https://www.thetecsup.com" target="_blank">thetecsup</a></p>
+
+<p>Any support or improvements on this would be much appreciated :).</p>
